@@ -8,4 +8,4 @@ with open("text.txt", "r") as file:
     print(content)
 
 
-print("Файл успешно записан.")
+print("Файл успешно")
