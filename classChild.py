@@ -12,7 +12,8 @@ class House(Building):
         self.quer = quer
     
     def get(self):
-        print(f"Year: {self.year}, City: {self.city}, Quer: {self.quer}")
+        super().get()
+        print(f"Quer: {self.quer}")
 
 class Room(House):
     def __init__(self, year = None, city = None, quer = None, room = None):
@@ -20,7 +21,8 @@ class Room(House):
         self.room = room
     
     def get(self):
-        print(f"Year: {self.year}, City: {self.city}, Quer: {self.quer}, Room: {self.room}")
+        super().get()
+        print(f"Quer: {self.quer}, Room: {self.room}")
 
 house = Room(2000, "New York", 200, "2 rooms")
 house.get()
